@@ -1,5 +1,117 @@
-upstream-name (pkgver-pkgrel) distro_codename; urgency=medium
+refind (0.14.2-99pika1) lunar; urgency=medium
 
-  * Initial release. (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Update to 0.14.2 upstream release
+    - see http://www.rodsbooks.com/refind/revisions.html for changes
 
- -- ferreo <harderthanfire@gmail.com>  Wed, 18 Jan 2023 21:48:14 +0000
+ -- ferrreo <harderthanfire@gmail.com>  Mon, 11 Apr 2022 16:32:54 -0700
+
+refind (0.13.3-1) UNRELEASED; urgency=medium
+
+  * Update to 0.13.3 upstream release
+    - see http://www.rodsbooks.com/refind/revisions.html for changes
+
+ -- Tianon Gravi <tianon@debian.org>  Mon, 11 Apr 2022 16:32:54 -0700
+
+refind (0.13.2-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since stretch:
+    + Build-Depends: Drop versioned constraint on debhelper.
+
+  [ Tianon Gravi ]
+  * Update to 0.13.2 upstream release
+    - see http://www.rodsbooks.com/refind/revisions.html for changes
+    - "Updated CentOS Secure Boot (MOK) keys" (Closes: #958744)
+  * Backport "gnu-efi" fix (Closes: #995623)
+
+ -- Tianon Gravi <tianon@debian.org>  Mon, 25 Oct 2021 15:44:40 -0700
+
+refind (0.12.0-1) unstable; urgency=medium
+
+  * Update to 0.12.0 upstream release
+    - see http://www.rodsbooks.com/refind/revisions.html for changes
+  * Backport patch for GCC 10 (Closes: #957754)
+
+ -- Tianon Gravi <tianon@debian.org>  Wed, 22 Jul 2020 14:00:56 -0700
+
+refind (0.11.4-1) unstable; urgency=medium
+
+  * Update to 0.11.4 upstream release
+    - see http://www.rodsbooks.com/refind/revisions.html for changes
+  * Update Standards-Version to 4.3.0
+
+ -- Tianon Gravi <tianon@debian.org>  Thu, 15 Aug 2019 08:12:37 -0700
+
+refind (0.11.3-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/copyright: Use https protocol in Format field
+  * d/watch: Use https protocol
+
+  [ Tianon Gravi ]
+  * Update to 0.11.3 upstream release
+    - see http://www.rodsbooks.com/refind/revisions.html for changes
+  * Update Standards-Version to 4.2.1 (no changes)
+  * Use "/usr/share/dpkg/architecture.mk" appropriately
+
+ -- Tianon Gravi <tianon@debian.org>  Wed, 17 Oct 2018 08:09:29 -0700
+
+refind (0.11.2-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload, fixing longstanding l10n issues.
+
+  [ Helmut Grohne ]
+  * Fix FTCBFS: (Closes: #896829)
+    - Pass ARCH= to make
+    - Let dh_auto_build pass cross tools to make
+
+  [ Helge Kreutzmann ]
+  * Debconf translation updates:
+    - French, thanks Julien Patriarca (Closes: #833856)
+    - Netherlands, thanks Frans Spiesschaert (Closes: #834610)
+    - Brazilian Portuguese, thanks Adriano Rafael Gomes (Closes: #834934)
+    - German, thanks Chris Leick (Closes: #843766)
+    - Portuguese, thanks Rui Branco (Closes: #858748, #898283)
+    - Russian, thanks Lev Lamberov (Closes: #883140)
+    - Spanish, thanks Jonathan Bustillos (Closes: #900712)
+
+  [ Tianon Gravi ]
+  * Update Vcs-* to point to Salsa
+  * Update Homepage to https
+
+ -- Helge Kreutzmann <debian@helgefjell.de>  Sat, 01 Sep 2018 08:59:13 +0200
+
+refind (0.11.2-1) unstable; urgency=medium
+
+  * Update to 0.11.2 upstream release
+    - see http://www.rodsbooks.com/refind/revisions.html for changes
+
+ -- Tianon Gravi <tianon@debian.org>  Mon, 04 Dec 2017 15:39:01 -0800
+
+refind (0.10.4-1) unstable; urgency=medium
+
+  * Update to 0.10.4 upstream release
+    - experimental touchscreen support
+    - support for 64bit pointers in ext4fs driver
+    - remove backported patches
+
+ -- Tianon Gravi <tianon@debian.org>  Mon, 10 Oct 2016 16:12:05 -0700
+
+refind (0.10.3-2) unstable; urgency=medium
+
+  * Fix minor description typo (Closes: #827642); thanks Josh!
+  * Move "sbsigntool" to "Recommends" (especially for arm64, which doesn't have
+    sbsigntool in Debian yet)
+  * Backport upstream change to refind-install to handle a wider range of disk
+    devices (Closes: #827851)
+  * Backport upstream patch for GNU-EFI header incompatibility which causes our
+    package to FTBFS (Closes: #831258)
+  * Backport upstream patch for GNU-EFI uninitialized-pointer issue
+
+ -- Tianon Gravi <tianon@debian.org>  Sat, 08 Oct 2016 10:31:34 -0700
+
+refind (0.10.3-1) unstable; urgency=medium
+
+  * Initial release (Closes: #715426)
+
+ -- Tianon Gravi <tianon@debian.org>  Sat, 18 Jun 2016 10:05:34 -0700

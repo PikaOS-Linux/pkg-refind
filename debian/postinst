@@ -1,0 +1,11 @@
+#!/bin/bash
+# Post-installation script (run on USER'S system after installing the
+# main rEFInd package)
+
+set -e
+
+if [ -f /usr/share/debconf/confmodule ] ; then
+    . /usr/share/debconf/confmodule
+fi
+
+#DEBHELPER#
