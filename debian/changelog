@@ -1,3 +1,10 @@
+refind (0.14.2-99pika2) pikauwu; urgency=medium
+
+  * Update to 0.14.2 upstream release
+    - see http://www.rodsbooks.com/refind/revisions.html for changes
+
+ -- ferrreo <harderthanfire@gmail.com>  Mon, 11 Apr 2022 16:32:54 -0700
+
 refind (0.14.2-99pika1) pikauwu; urgency=medium
 
   * Update to 0.14.2 upstream release
